@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias de la semana</title>
+</head>
+<body>
+    <h1>Del 1 al 7: Escoge un dia de la semana</h1>
+    <button onclick="semanas()">Elige un dia de la semana</button>
+    <script type="text/javascript">
+    function semanas() {
+        let semana=['','Lunes','Martes','Miercoles','Jueves','Viernes', 'Sábado','Domingo'];
+        let dia=prompt ("Elige un numero del 1 al 7 para seleccionar un dia");
+        
+    if (dia >= 1 && dia <= 7) {
+            alert(semana[dia]);
+        } else {
+            alert("Número no válido. Por favor, elige un número entre 1 y 7.");
+        }
+    }
+    function imprime_semanas() {
+        let semana=['','Lunes','Martes','Miercoles','Jueves','Viernes', 'Sábado','Domingo'];
+       for (let i=0;i<semana.length;i++) {
+        document.write(i+" " + semana[i] + "<br>")
+       }
+    }
+</script>
+</body>
+</html>
