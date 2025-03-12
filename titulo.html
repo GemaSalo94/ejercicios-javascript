@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar H1</title>
+    <style type="text/css">
+        #titulo {
+            color: green;
+            background-color: yellow;
+            text-align: center;
+            font-size: 5em;
+        }
+    </style>
+    <script type="text/javascript">
+        function cambiaUsuario () {
+            var usuario = prompt ("Por favor introduce tu nombre de Usuario")
+            if (usuario) {
+            titulo.innerHTML="La página de" + " " + usuario;
+            
+        }
+    }
+
+        function cambiaColor() {
+            var titulo = document.getElementById ("titulo");
+            document.getElementById ("titulo").style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo"> </h1>
+    <button onclick="cambiaUsuario()">Usuario</button>
+    <button onclick="cambiaColor()">Añade un poco de color</button>
+</body>
+</html>
